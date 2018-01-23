@@ -1,4 +1,5 @@
-<img src="https://cdn.logojoy.com/tests/logo.png"/>
+<img src="https://cdn.logojoy.com/tests/logo.png" />
+
 # frontend-test
 
 ### Starting
