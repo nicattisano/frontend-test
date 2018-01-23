@@ -24,5 +24,5 @@ You have any questions please send them to <a href="mailto:emma@logojoy.com">emm
 To view suggested CSS styles from invision click the inspect feature in the bottom menu:<br/>
 <img src="https://cdn.logojoy.com/tests/Invision1.png" width="300px"/>
 
-If you need an assets in the mockup you select the “Assets” tab from the top navigation bar when in inspect mode:<br />
+If you need any assets in the mockup you select the “Assets” tab from the top navigation bar when in inspect mode:<br />
 <img src="https://cdn.logojoy.com/tests/Invision2.png" width="300px"/>
