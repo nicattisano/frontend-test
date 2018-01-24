@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans');
+.App {
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.App-title {
+  font-size: 1.5em;
+}
+.full {
+    float: left;
+    width: 100%;
+}
+button:focus, button:active, [role=button]:active, [role=button]:focus  {
+  outline: none;
+}
+.modalClickBtn {
+    border: none;
+    background: none;
+    padding: 0;
+    position: relative;
+    z-index: 0;
+}
+.modalClickBtn:hover, .modalClickBtn:focus, .modalClickBtn:active {
+    border: none;
+    background: none;
+}
+.overlayShare {
+    opacity: 0;
+    z-index: 9;
+    position: absolute;
+    background: rgba(0,0,0,0.6);
+    width: 100%;
+    height: 100%;
+    line-height: 280px;
+    transition: 0.2s all;
+}
+.modalClickBtn:hover .overlayShare {
+    opacity: 1;
+}
+.shareBtn {
+    background: none;
+    color: #fff;
+    font-size: 14pt;
+    border: 2px solid #fff;
+    padding: 5px 32px;
+    transition: 0.2s all;
+}
+.shareBtn:hover {
+    background: #fff;
+    border: 2px solid #fff;
+}
+.closeX {
+  border: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  padding: 0;
+  float: right;
+  position: absolute;
+  right: 16px;
+}
+
+.closeX img {
+    width: 20px;
+}
+
+.shareP {
+    float: left;
+    line-height: 33px;
+    margin-right: 12px;
+}
+.sm {
+  width: 33px;
+  margin: 0 5px;
+  float: left;
+}
+.socialWrap {
+    width: 230px;
+    margin: 20px auto 0 auto;
+}
+.galleryThumb {
+    margin-bottom: 17px;
+}
+.galleryThumb:hover {
+  cursor: pointer;
+}
+.current {
+    border: 1px solid #e6e6e6;
+    border-radius: 5px;
+}
+.noPad {
+    padding: 0;
+}
+.modalH2 {
+    float: left;
+    width: 100%;
+    margin: 10px 0;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+.modalContent {
+    float: left;
+    width: 100%;
+    padding: 7px 12px;
+}
+.modal-dialog {
+    width: 710px;
+}
+.modal-content {
+    padding: 0 40px;
+}
+.customCol21 {
+  width: 21% !important;
+}
+.modal-header {
+    border-bottom: none;
+}
+
+
+@media (max-width: 992px) {
+  .modal-dialog {
+    width: 90%;
+  }
+  .customCol21 {
+    width: 100% !important;
+    float: left;
+    padding: 0;
+  }
+  .galleryThumb {
+    margin-bottom: 17px;
+    float: left;
+    width: 25%;
+    padding-right: 2%;
+  }
+  /*.galleryThumb:last-child {
+    padding-right: 0;
+  }*/
+}
