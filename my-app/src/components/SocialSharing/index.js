@@ -1,15 +1,11 @@
 import React, { Component } from 'react';
 import {
   ShareButtons,
-  ShareCounts,
   generateShareIcon
 } from 'react-share';
 import '../../App.css';
 
 class SocialSharing extends Component {
-  constructor(props) {
-    super(props);
-	}
 
   render() {
 

@@ -3,10 +3,6 @@ import {Grid, Row, Col, PageHeader} from 'react-bootstrap';
 import '../../App.css';
 
 class Heading extends Component {
-  constructor(props) {
-    super(props);
-	}
-
   render() {
 
     return (

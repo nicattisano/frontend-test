@@ -1,10 +1,5 @@
 import React, { Component } from 'react';
 import {Row, Col, Image} from 'react-bootstrap';
-import {
-  ShareButtons,
-  ShareCounts,
-  generateShareIcon
-} from 'react-share';
 import '../../App.css';
 
 class Gallery extends Component {

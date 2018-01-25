@@ -1,11 +1,5 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import {Row, Grid, Col, Modal, PageHeader, OverlayTrigger, Button, Image} from 'react-bootstrap';
-import {
-  ShareButtons,
-  ShareCounts,
-  generateShareIcon
-} from 'react-share';
+import {Row, Grid, Col, Modal, Button, Image} from 'react-bootstrap';
 import SocialSharing from './components/SocialSharing';
 import Gallery from './components/Gallery';
 import Heading from './components/PageHeader';
