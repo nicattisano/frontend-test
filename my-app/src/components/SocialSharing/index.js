@@ -24,26 +24,28 @@ class SocialSharing extends Component {
     const GooglePlusIcon = generateShareIcon('google');
     const EmailIcon = generateShareIcon('email');
 
+    const thisUrl = window.location.href;
+
     return (
       <div className="socialWrap">
         <p className="shareP">Share:</p>
         <div className="sm">
-          <TwitterShareButton url="www.logojoy.com" children="">
+          <TwitterShareButton url={thisUrl} children="">
             <TwitterIcon size={32} round={true} />
           </TwitterShareButton>
         </div>
         <div className="sm">
-          <FacebookShareButton url="www.logojoy.com" children="">
+          <FacebookShareButton url={thisUrl} children="">
             <FacebookIcon size={32} round={true} />
           </FacebookShareButton>
         </div>
         <div className="sm">
-          <GooglePlusShareButton url="www.logojoy.com" children="">
+          <GooglePlusShareButton url={thisUrl} children="">
             <GooglePlusIcon size={32} round={true} />
           </GooglePlusShareButton>
         </div>
         <div className="sm">
-          <EmailShareButton url="www.logojoy.com" children="">
+          <EmailShareButton url={thisUrl} children="" subject="Check out my new logo from LogoJoy!" >
             <EmailIcon size={32} round={true} />
           </EmailShareButton>
         </div>

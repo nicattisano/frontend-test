@@ -108,6 +108,9 @@ button:focus, button:active, [role=button]:active, [role=button]:focus  {
 .modal-content {
     padding: 0 40px;
 }
+.modal-body {
+    padding-top: 0;
+}
 .customCol21 {
   width: 21% !important;
 }

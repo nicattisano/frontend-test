@@ -11,37 +11,25 @@ class Gallery extends Component {
   constructor(props) {
     super(props);
 
-    this.changeSrc1 = this.changeSrc1.bind(this);
-    this.changeSrc2 = this.changeSrc2.bind(this);
-    this.changeSrc3 = this.changeSrc3.bind(this);
-    this.changeSrc4 = this.changeSrc4.bind(this);
+    this.changeSrc = this.changeSrc.bind(this);
 
     this.state = {
       modalImageSrc: "/images/003/logo-lg@3x.png"
     };
   }
 
-  changeSrc1() {
-      this.setState({ modalImageSrc: '/images/003/logo-lg@3x.png' });
-  }
-  changeSrc2() {
-      this.setState({ modalImageSrc: '/images/004/shirt-lg@3x.png' });
-  }
-  changeSrc3() {
-      this.setState({ modalImageSrc: '/images/005/bc-lg@3x.png' });
-  }
-  changeSrc4() {
-      this.setState({ modalImageSrc: '/images/006/sm-lg@3x.png' });
+  changeSrc(source) {
+      this.setState({ modalImageSrc: source });
   }
 
   render() {
     return (
       <Row>
           <Col md={3} className="customCol21">
-            <Image src="/images/003/logo-thmb@3x.png" className="full galleryThumb" onClick={this.changeSrc1.bind(this)} />
-            <Image src="/images/003/t-shirt-thmb@3x.png" className="full galleryThumb" onClick={this.changeSrc2.bind(this)} />
-            <Image src="/images/003/bc-thmb@3x.png" className="full galleryThumb" onClick={this.changeSrc3.bind(this)} />
-            <Image src="/images/003/social-media@3x.png" className="full galleryThumb" onClick={this.changeSrc4.bind(this)} />
+            <Image src="/images/003/logo-thmb@3x.png" className="full galleryThumb" onClick={() => this.changeSrc('/images/003/logo-lg@3x.png')} />
+            <Image src="/images/003/t-shirt-thmb@3x.png" className="full galleryThumb" onClick={() => this.changeSrc('/images/004/shirt-lg@3x.png')} />
+            <Image src="/images/003/bc-thmb@3x.png" className="full galleryThumb" onClick={() => this.changeSrc('/images/005/bc-lg@3x.png')} />
+            <Image src="/images/003/social-media@3x.png" className="full galleryThumb" onClick={() => this.changeSrc('/images/006/sm-lg@3x.png')} />
           </Col>
           <Col md={9} className="noPad">
               <div className="current full">
